@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
 
 /* FIXME: This function will return a flashcard that will be used
@@ -11,13 +11,15 @@ interface Props {
 const FlashCard = ({ title, question, answer }: Props) => {
     const [showAnswer, setShowAnswer] = useState(false)
     return (
-        <View>
+        <View className = "flex-1 w-full px-4">
             <TouchableOpacity
+                className=" bg-blue-300 items-center rounded-none border border-spacing-1"
                 onPress={() => setShowAnswer(!showAnswer)}
-                className="text-center">
-                <Text>{title} {showAnswer ? answer : question} </Text>
+            >
+                <Text className="font-bold"> {title} {'\n'}</Text>
+                <Text className ="font-medium">{showAnswer ? answer : question}</Text>
             </TouchableOpacity>
-        </View>
+        </View>    
     );
 }
 
