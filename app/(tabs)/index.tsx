@@ -1,4 +1,6 @@
 import { SafeAreaView, Text, View, Image } from "react-native";
+import FlashCard from '@/components/FlashCard'
+const allCards = []
 export default function Index() {
   const num = 1
   /*to do

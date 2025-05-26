@@ -13,7 +13,7 @@ const _layout = () => {
             }}
         />
         <Tabs.Screen
-            name="add"
+            name="addCard"
             options = {{
                 title: "Add Card",
                 headerShown: false
