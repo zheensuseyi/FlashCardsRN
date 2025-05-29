@@ -6,7 +6,7 @@ const _layout = () => {
     return (
         <FlashCardProvider>
             <Tabs
-                screenOptions={{
+                screenOptions={{ 
                     tabBarStyle: {
                         backgroundColor: '#3B82F6',
                         borderTopWidth: 0,
@@ -19,7 +19,7 @@ const _layout = () => {
                     },
                 }}
             >
-                <Tabs.Screen
+                <Tabs.Screen 
                     name="index"
                     options={{
                         title: "Home",

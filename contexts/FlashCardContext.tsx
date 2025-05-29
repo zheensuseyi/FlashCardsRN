@@ -11,7 +11,6 @@ type FlashCardContextType = {
   addCard: (title: string, question: string, answer: string) => void;
 };
 
-// Default values for context
 export const FlashCardContext = createContext<FlashCardContextType>({
   cardArray: [],
   addCard: () => {},

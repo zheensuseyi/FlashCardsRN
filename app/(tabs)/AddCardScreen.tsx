@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react';
 import { FlashCardContext } from '@/contexts/FlashCardContext';
 
 const AddCardScreen = () => {
-  const [form, setForm] = useState({ title: '', question: '', answer: '' });
+  const [form, setForm] = useState({ title: '', question: '', answer: '' }); 
   const { cardArray, addCard } = useContext(FlashCardContext);
 
   const handleChange = (field: keyof typeof form, value: string) => {
