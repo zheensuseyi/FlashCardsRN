@@ -1,12 +1,24 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
-import { FlashCardProvider } from '@/contexts/FlashCardProvider'; // adjust path if needed
+import { FlashCardProvider } from '@/contexts/FlashCardProvider';
 
 const _layout = () => {
     return (
         <FlashCardProvider>
-            <Tabs>
+            <Tabs
+                screenOptions={{
+                    tabBarStyle: {
+                        backgroundColor: '#3B82F6',
+                        borderTopWidth: 0,
+                    },
+                    tabBarActiveTintColor: '#FFFFFF',
+                    tabBarInactiveTintColor: '#BFDBFE',
+                    tabBarLabelStyle: {
+                        fontWeight: '600',
+                        fontSize: 12,
+                    },
+                }}
+            >
                 <Tabs.Screen
                     name="index"
                     options={{
